@@ -9,7 +9,7 @@ data class Pregunta(
     var nick : String,
     var avatar : String,
     var fecha : Date,
-    var post : String
+    var pregunta : String
 ) : Serializable
 
 data class Comentario (
