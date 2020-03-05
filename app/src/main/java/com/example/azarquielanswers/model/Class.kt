@@ -19,7 +19,7 @@ data class Comentario (
     var avatar: String,
     var fecha: Date,
     var pregunta: Pregunta,
-    var respuesta : String
+    var post : String
 ) : Serializable
 
 data class Usuario(

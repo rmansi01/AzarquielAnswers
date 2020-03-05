@@ -32,7 +32,7 @@ class CustomAdapter(val context: Context,
         return dataList.size
     }
 
-    internal fun setPajaros(comentarios: List<Comentario>) {
+    internal fun setComentarios(comentarios: List<Comentario>) {
         this.dataList = comentarios
         notifyDataSetChanged()
     }
@@ -42,7 +42,7 @@ class CustomAdapter(val context: Context,
         fun bind(dataItem: Comentario){
             // itemview es el item de diseño
             // al que hay que poner los datos del objeto dataItem
-            itemView.tvrrespuesta.text=dataItem.respuesta
+            itemView.tvrrespuesta.text=dataItem.post
             itemView.tvuser.text=dataItem.nick
             itemView.tvfecharespuesta.text=(dataItem.fecha).toString()
             itemView.tag=dataItem
